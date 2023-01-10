@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-200 text-gray-800 ;
+  };
+}
+
+@layer components {
+  header {
+    @apply bg-white py-5 px-6;
+    min-width: 767px;
+  }
+  ul li {
+    @apply inline-block mx-5;
+  }
+  .btn {
+    @apply bg-blue-500 text-white py-2 px-5 rounded-full;
+  }
+  .container {
+    @apply max-w-3xl rounded-3xl my-12 mx-auto bg-white;
+  }
+  img {
+    @apply rounded-l-3xl;
+  }
+  .details {
+    @apply p-8;
+  }
+  h2 {
+    @apply font-bold text-2xl;
+  }
+  p {
+    @apply mt-3;
+  }
+}
